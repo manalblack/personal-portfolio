@@ -1,0 +1,466 @@
+:root {
+    --background: rgb(24, 24, 24);
+    --second-background: rgb(21, 21, 21);
+    --gradient-color: linear-gradient(to right, #ba5370, #f4e2d8);
+}
+
+/* change the colors!!!!!! fix the image size and the hire me button */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body {
+    height: 100vh;
+    background-color: var(--background);
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 2em 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(15,15,15,0.8);
+    backdrop-filter: blur(10px);
+    z-index: 1;
+}
+nav i{
+    color: #f4e2d8;
+    font-size: 3em;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+    visibility: hidden;
+}
+nav i:hover{
+    transform: rotate(-50deg);
+}
+
+ul {
+    display: flex;
+    align-items: center;
+    gap: 2em;
+}
+
+nav a {
+    margin-right: 20px;
+}
+
+nav ul a{
+    color: #fff;
+    font-size: 1.3em;
+    opacity: 0.8;
+    transition: 0.2s ease-in-out;
+    margin-right: 10px;
+}
+
+nav ul a:hover{
+    opacity: 1;
+}
+
+.logo {
+    font-size: 2em;
+    color: #fff;
+    font-weight: 800;
+    opacity: 0.8;
+    transition: 0.2s ease-in-out;
+    margin: 3;
+}
+
+.logo:hover {
+    opacity: 1;
+}
+
+.btn {
+    padding: 0.5em 1em;
+    color: #fff;
+    background-color: var(--background);
+    font-weight: 300;
+    letter-spacing: 1px;
+    border-radius: 0.5em;
+    font-size: 1.3em;
+    border: 2px solid white;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.btn:hover {
+    background-color: #fff;
+    color: var(--background);
+}
+
+span {
+    /* background: linear-gradient(to right, #6cff52, #3ec5ff); */
+    background: var(--gradient-color);
+    background-clip: text;
+    color: transparent;
+}
+
+section {
+    min-height: 100vh;
+    padding: 5% 15%;
+}
+
+#home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+    color: #fff;
+}
+
+
+/* the width and height of the top image is extremely important */
+#home img {
+    width: 25vw;
+    height: 22vw;
+    border-radius: 50%;
+    margin-top: 3em;
+}
+
+.info-box {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 2em;
+    max-width: 600px;
+}
+
+.info-box h1 {
+    font-size: 3.1em;
+    font-weight: 500;
+
+}
+
+.info-box h3 {
+    font-size: 2.1em;
+    font-weight: 400;
+}
+
+.info-box p{
+    opacity: 0.7;
+    line-height: 2.3em;
+}
+
+.btn-box {
+    display: flex;
+    gap: 1.1em;
+}
+.btn a {
+    color: #f4e2d8;
+}
+.btn a:hover {
+    color: var(--background);
+}
+
+/* you can use the line below to style the second button */
+
+/* .btn-box :nth-of-type(2) {
+    background-color: #fff;
+    color: var(--background);
+}
+
+.btn-box :nth-of-type(2):hover {
+    background-color: var(--background);
+    color: #fff;
+} */
+
+/* SCROLLBAR STYLING */
+
+::-webkit-scrollbar {
+    width: 20px;
+    background-color: var(--background);
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(to bottom, #ba5370, #f4e2d8);
+}
+
+#about {
+    background-color: var(--second-background);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4em;
+    margin: 0;
+}
+
+.about-box {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    gap: 2em;
+}
+
+
+.about-box h1 {
+    font-size: 3.1em;
+    margin-bottom: 40px;
+}
+
+.about-box p {
+    color: #fff;
+    opacity: 0.8;
+    line-height: 2.3em;
+}
+
+.skills {
+    display: flex;
+    text-align: left;
+    gap: 12em;
+}
+
+.skills ul {
+    font-size: 2em;
+    font-weight: 300;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    opacity: 0.8;
+    align-items: baseline;
+    margin-top: 40px;
+}
+ /* add the styling for the skills icons dropdown */
+
+.about-box h2 {
+    font-size: 3.1em;
+    margin-top: 30px;
+} 
+
+#services {
+    background-color: var(--background);
+
+}
+
+.header {
+    font-size: 4em;
+    margin-bottom: 50px;
+}
+
+.services-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2em;
+}
+
+.box {
+    border: 3px solid rgb(49, 49, 49);
+    border-radius: 0.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+    object-fit: cover;
+    padding: 3em;
+    gap: 2em;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    background-color: var(--second-background);
+}
+
+.box:hover{
+    border: 3px solid rgb(126, 123, 123);
+}
+
+.box p{
+    opacity: 0.8;
+    line-height: 2em;
+}
+
+.box h1 {
+    font-size: 2em;
+}
+
+#contact {
+    background-color: var(--second-background);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+}
+
+form .input-box {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    gap: 2em;
+}
+.input-box span {
+    font-size: 1.5em;
+}
+
+form input {
+    font-size: 1.3em;
+    padding: 1em 5em;
+    border-radius: 0.5em;
+    border: none;
+    outline: none;
+}
+
+form input:focus{
+    background: rgb(197, 191, 191);
+}
+
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10em;
+    bottom: 0;
+    background-color: var(--background);
+    width: 100%;
+    padding: 5em 15%;
+}
+
+.col-left {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.col-box {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+.col-right {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    color: #fff;
+    max-width: 500px;
+}
+
+/* fix the @media to make it responsive*/
+@media(max-width:960px) {
+    section {
+        padding: 8em 15%;
+    }
+    nav .btn {
+        display: none;
+    }
+}
+
+/* TODO: work on the FOOTER!!!!!!! */
+/* hide the button and only show it when the screen hit the 700px breakpoint  */
+/* work on the dropdown menu for small screens */
+@media(max-width:600px) {
+    nav ul{
+        display: none;
+    }
+    .show {
+        margin-top: 200px;
+        top: -110px;
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        width: 90%;
+        padding: 1em 8%;
+        align-items: center;
+        justify-content: space-between;
+        background-color: rgba(15,15,15,0.8);
+        backdrop-filter: blur(50px);
+        transition: 0.3s ease-in-out;
+        /* z-index: 1; */
+    }    
+
+    .show-nav {
+        display: flex;
+        flex-direction: column;
+        height: 310px;
+    }
+    nav i{
+        visibility: visible;
+        top: 0;
+        z-index: 1;
+    }
+    
+    /* style for the dropdown navbar  */
+    nav .logo {
+        font-size: 1.6rem;
+    }
+    .btn-box {
+        gap: 0.8rem;
+    }
+    .btn-box .btn {
+        padding: 0.3rem 0.5rem;
+        font-size: 1.1rem;
+    }
+    .info-box h1, h3{
+        font-size: 1.5em;
+    }
+    .about-info {
+        margin-bottom: 50px;
+    }
+    .about-box {
+        gap: 1em;
+    }
+    .about-box h1 {
+        font-size: 2em;
+        margin-bottom: 20px;
+    }
+    .about-box p{
+        line-height: 1.6em;
+    }
+    .about-box h2 {
+        font-size: 2em;
+        margin-top: 15px;
+    } 
+    .skills {
+        gap: 6em;
+    }
+    .skills ul {
+        font-size: 1.5em;
+        margin-top: 25px;
+    }
+    .header {
+        font-size: 2em;
+        margin-bottom: 50px;
+    }
+    .services-container {
+        gap: 1em;
+    }
+    .box {
+        padding: 1.5em;
+        gap: 1.4em;
+
+    }
+    form {
+        gap: 1.5em;
+    }
+    form .input-box{
+        gap: 1.5em;
+    }
+    form input {
+        font-size: 1em;
+        padding: 0.5em 3em;
+        border-radius: 0.5em;
+        border: none;
+        outline: none;
+    }
+    .input-box span {
+        font-size: 1em;
+    }
+    form .btn {
+        padding: 0.3rem 0.5rem;
+        font-size: 1.1rem;
+    }
+}

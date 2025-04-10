@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Personal Portfolio</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+
+<!-- ADD ICONS BOXICONS or FONT AWESOME add another font from google fonts -->
+<body>
+   <header>
+        <nav class="nav-bar">
+            <a href="" class="logo"><span>Manal</span></a>
+
+            <!-- using the section ids as paths for the links -->
+            <ul class="links">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#services">services</a>
+                <a href="#contact">Contact</a>
+            </ul>
+
+            <i class='bx bx-menu' id="menu"></i>
+            <a href="#contact" class="btn">contact me</a>
+        </nav>
+   </header>
+
+   <main>
+    <section id="home">
+        <img src="images/galaxy.png.jpg" alt="" >
+        <div class="info-box">
+            <h1><span>Hello, i'm manal</span></h1>
+            <h3><span>web developer</span></h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit
+                . Delectus corporis aliquid ex saepe soluta voluptatum o
+                fficia vitae tempora doloribus sequi!
+            </p>
+            
+        </div>
+
+        <div class="btn-box">
+            <button class="btn">Hire me</button>
+            <button class="btn"><a href="#contact">Contact me</a></button>
+        </div>
+
+    </section>
+
+    <section id="about">
+
+        <div class="about-box">
+
+            <div class="about-info">
+                <h1><span>About</span></h1>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing 
+                    elit. Exercitationem cumque natus corporis cupiditate 
+                    dolores esse? Ad iusto asperiores sunt quae!
+                </p>
+            </div>
+
+            <h2><span>Skills</span></h2>
+            <div class="skills">
+
+                <ul>
+                    <li><span>Javascript</span></li>
+                    <li><span>HTML</span></li>
+                    <li><span>CSS</span></li>
+                </ul>
+
+                <ul>
+                    <li><span>React</span></li>
+                    <li><span>NodeJS</span></li>
+                    <li><span>MySql</span></li>
+                </ul>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="services">
+        <h1 class="header"><span>Services</span></h1>
+    <div class="services-container">
+
+         <div class="box">
+            <h1><span>Web design</span></h1>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                    Consequatur fugiat saepe impedit pariatur architecto 
+                    laudantium excepturi possimus nam dicta tenetur!
+                </p>
+        </div>
+
+        <div class="box">
+            <h1><span>Web development</span></h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                Consequatur fugiat saepe impedit pariatur architecto 
+                laudantium excepturi possimus nam dicta tenetur!
+            </p>
+        </div>
+
+        <div class="box">
+            <h1><span>AI / BOTS</span></h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                Consequatur fugiat saepe impedit pariatur architecto 
+                laudantium excepturi possimus nam dicta tenetur!
+            </p>
+    </div>
+    </section>
+
+    <section id="contact">
+        <h1 class="header"><span>Contact</span></h1>
+
+        <form action="">
+            <div class="input-box">
+                <span>full name</span>
+                <input type="text" placeholder="">
+            </div>
+            <div class="input-box">
+                <div class="input-box">
+                    <span>email</span>
+                    <input type="text" placeholder="">
+                </div>
+            </div>
+            <div class="input-box">
+                <span>meassage</span>
+                <!--  TODO: change the input to a textarea!! -->
+                <input type="text" placeholder="">
+            </div>
+            <div class="btn">submit</div>
+        </form>
+    </section>
+   </main>
+
+   <footer>
+        <div class="col-left">
+            <div class="col-box">
+                <span></span>
+                <span>12345 Lorem, ipsum.</span>
+            </div>
+            <div class="col-box">
+                <span></span>
+                <span>phone 1223455</span>
+            </div>
+            <div class="col-box"></div>
+                <span></span>
+                <span>enter@youremail.com</span>
+            </div>
+        </div>
+
+        <div class="col-right">
+            <span>about my services</span>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                Earum quo sequi provident cupiditate voluptatem obcaecati,
+                 omnis voluptatum deleniti rerum laboriosam?
+            </p>
+            <div class="social-icons">
+                <!-- add social media icons -->
+            </div>
+        </div>
+
+   </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
