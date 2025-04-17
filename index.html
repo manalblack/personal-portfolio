@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="style.css">
     <title>Personal Portfolio</title>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://kit.fontawesome.com/d39bd5e44b.js" crossorigin="anonymous"></script>
 
 </head>
 
@@ -13,26 +14,33 @@
 <body>
    <header>
         <nav>
-            <a href="" class="logo"><span>Manal</span></a>
-
+            <div id="logo-container">
+                <a href="" class="logo"><span>Manal</span></a>
+            </div>
+            
             <!-- using the section ids as paths for the links -->
-            <ul class="links">
-                <li>
-                    <a href="#home" class="nav-a">Home</a>
-                </li>
-                <li>
-                    <a href="#about" class="nav-a">About</a>
-                </li>
-                <li>
-                    <a href="#services" class="nav-a">services</a>
-                </li>
-                <li>
-                    <a href="#contact" class="nav-a">Contact</a>
-                </li>
-                <!-- <a href="#contact" class="btn">contact me</a> -->
-            </ul>
+             
+             <div id="links-container">
+                <ul class="links">
+                    <li>
+                        <a href="#projects-container" class="nav-a">Projects</a>
+                    </li>
+                    <li>
+                        <a href="#about" class="nav-a">About</a>
+                    </li>
+                    <li>
+                        <a href="#services" class="nav-a">services</a>
+                    </li>
+                    <li>
+                        <a href="#contact" class="nav-a">Contact</a>
+                    </li>
+                    
+                </ul>
+             </div>
+            
 
-            <i class='bx bx-menu' id="menu"></i>
+            <i class="fa-solid fa-bars" id="menu"></i>
+            <!-- <i class='bx bx-menu' id="menu"></i> -->
             <!-- <a href="#contact" class="btn">contact me</a> -->
         </nav>
    </header>
@@ -42,16 +50,15 @@
         <img src="images/galaxy.png.jpg" alt="" >
         <div class="info-box">
             <h1><span>Hello, i'm manal</span></h1>
-            <h3><span>web developer</span></h3>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit
-                . Delectus corporis aliquid ex saepe soluta voluptatum o
-                fficia vitae tempora doloribus sequi!
+            <!-- <h3><span>A web developer</span></h3> -->
+            <p> 
+                A self-taught full-stack web developer driven by a fascination with the tech world. Dedicated to building high-quality, user-friendly websites for amazing user-experience !!
             </p>
             
         </div>
 
         <div class="btn-box">
-            <button class="btn">Hire me</button>
+            <button class="btn test">Hire me</button>
             <button class="btn"><a href="#contact">Contact me</a></button>
         </div>
 
@@ -63,25 +70,57 @@
 
             <div class="about-info">
                 <h1><span>About</span></h1>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing 
-                    elit. Exercitationem cumque natus corporis cupiditate 
-                    dolores esse? Ad iusto asperiores sunt quae!
+                <p>
+                    My portfolio demonstrate my ability to create complex and engaging projects, And the ability to spot problems and solve them as efficiently as possible. My projects include, a feature rich Pinterest clone, using React.js and firebase.
+                    a fullstack e-commerce website utilizing React.js, Node.js, Express.js and Mongodb for a flexible database solution. 
                 </p>
             </div>
+
+                <h1 id="projects-header"><span>Projects</span></h1>
+                <div id="projects-container">
+                    
+                    <div class="project-box">
+                        project container
+                    </div>
+                    <div class="project-box">
+                        project container
+                    </div>
+                    <!-- <div class="project-box">
+                        project container
+                    </div>
+                    <div class="project-box">
+                        project container
+                    </div>
+                    <div class="project-box">
+                        project container
+                    </div>
+                    <div class="project-box">
+                        project container
+                    </div> -->
+                </div>
 
             <h2><span>Skills</span></h2>
             <div class="skills">
 
                 <ul>
-                    <li><span>Javascript</span></li>
-                    <li><span>HTML</span></li>
-                    <li><span>CSS</span></li>
+                    <li id="frontend-header" class="list-header">FrontEnd</li>
+                    <li class="skill-li"><span>Javascript</span></li>
+                    <li class="skill-li"><span>React</span></li>
+                    <li class="skill-li"><span>Bootstrap</span></li>
                 </ul>
 
                 <ul>
-                    <li><span>React</span></li>
-                    <li><span>NodeJS</span></li>
-                    <li><span>MySql</span></li>
+                    <li id="backend-header" class="list-header">Backend</li>
+                    <li class="skill-li"><span>NodeJS</span></li>
+                    <li class="skill-li"><span>Express</span></li>
+                    <li class="skill-li"><span>APIs</span></li>
+                </ul>
+
+                <ul>
+                    <li id="db-header" class="list-header">Databases</li>
+                    <li class="skill-li"><span>MongoDb</span></li>
+                    <li class="skill-li"><span>SQL</span></li>
+                    <li class="skill-li"><span>Firebase</span></li>
                 </ul>
 
             </div>
@@ -91,28 +130,26 @@
     <section id="services">
         <h1 class="services-header"><span>Services</span></h1>
     <div class="services-container">
-
+ 
          <div class="services-box">
             <h1><span>Web design</span></h1>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-                    Consequatur fugiat saepe impedit pariatur architecto 
-                    laudantium excepturi possimus nam dicta tenetur!
+                <p>
+                    commitid to crafting visually appealing modern responsive web designs. My web design process is collaborative and focused on understanding your unique needs. I build websites that are both beautiful and highly functional across different devices
                 </p>
         </div>
 
         <div class="services-box">
             <h1><span>Web development</span></h1>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-                Consequatur fugiat saepe impedit pariatur architecto 
-                laudantium excepturi possimus nam dicta tenetur!
+            <p>
+               I specialize in full-stack web development, utilizing technologies like React.js And Node.js and Bootstrap 
+               To create dynamic and and interactive online solutions. This process involves a deep understanding of my client requirements, and communicating with the client every step of the way.
             </p>
         </div>
 
         <div class="services-box">
             <h1><span>AI / BOTS</span></h1>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-                Consequatur fugiat saepe impedit pariatur architecto 
-                laudantium excepturi possimus nam dicta tenetur!
+            <p>
+                build a bot using pupteer.js
             </p>
     </div>
     </section>
@@ -134,7 +171,7 @@
             <div class="input-box">
                 <span>meassage</span>
                 <!--  TODO: change the input to a textarea!! -->
-                  <textarea id="" class="form-textarea"></textarea>
+                  <textarea id="form-textarea"></textarea>
             </div>
             <div class="btn">submit</div>
         </form>
@@ -145,28 +182,44 @@
         <div class="col-left">
             <div class="col-box">
                 <span></span>
-                <span>12345 Lorem, ipsum.</span>
+                <span>Contact me through my social accounts</span>
             </div>
-            <div class="col-box">
+            <!-- <div class="col-box">
                 <span></span>
                 <span>phone 1223455</span>
+            </div> -->
+            <div class="col-box">
+                <span id="email-span">manal.coder2023@gmail.com</span>
             </div>
-            <div class="col-box"></div>
-                <span></span>
-                <span>enter@youremail.com</span>
+            
+
+                    <!-- add your social media accounts link in the href -->
+                    <div id="social-media-icons">
+                        <a href="" id="social-media-link">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="" id="social-media-link">
+                            <i class="fa-brands fa-x-twitter" ></i>
+                        </a>
+                        <a href="" id="social-media-link">
+                            <i class="fa-brands fa-linkedin"></i>
+                        </a>
+
+                       
+                       
+                    </div>
+                
             </div>
         </div>
 
-        <div class="col-right">
+        <!-- <div class="col-right">
             <span>about my services</span>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
                 Earum quo sequi provident cupiditate voluptatem obcaecati,
                  omnis voluptatum deleniti rerum laboriosam?
             </p>
-            <div class="social-icons">
-                <!-- add social media icons -->
-            </div>
-        </div>
+            
+        </div> -->
 
    </footer>
 

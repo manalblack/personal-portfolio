@@ -14,7 +14,7 @@
     list-style: none;
     scroll-behavior: smooth;
     font-family: 'Courier New', Courier, monospace;
-    outline: 1px solid red;
+    /* outline: 1px solid red; */
 }
 
 body {
@@ -25,23 +25,25 @@ body {
 }
 
 nav {
-    position: relative;
+    position: fixed;
     top: 0;
     max-width: 100%;
     padding: 1% 29%;
     display: flex;
-    align-items: center;
+    /* align-items: center; */
     justify-content: space-between;
-    gap: 2rem;
-    /* background-color: rgba(15,15,15,0.8); */
-    background-color: #fff;
+    gap: 15rem;
+    background-color: rgba(15,15,15,0.8);
+    /* background-color: #fff; */
     backdrop-filter: blur(10px);
     z-index: 1;
     /* overflow-x: hidden; */
 }
+
+/* the <i> is for the hamburger menu*/
 nav i{
     /* color: #f4e2d8; */
-    font-size: 2.3em;
+    font-size: 1.5rem;
     cursor: pointer;
     transition: 0.2s ease-in-out;
     visibility: hidden;
@@ -49,23 +51,24 @@ nav i{
 nav i:hover{
     transform: rotate(-50deg);
 }
-
-ul {
-   
+#links-container {
+    padding: 0.5rem 1rem; 
+    margin-left: 1rem;
+    /* margin-right: 5em; */
 }
+
 .links {
     display: flex;
     align-items: center;
-    /* margin-left: auto; */
-    gap: 1rem;
+    margin-right: 10rem;
+    gap: 3rem;
 }
 
 .nav-a {
     color: hsl(343, 43%, 53%);
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     opacity: 0.8;
     transition: 0.2s ease-in-out;
-    /* margin-left: 20px; */
 }
 
 nav a {
@@ -82,8 +85,15 @@ nav a:hover{
     font-weight: 800;
     opacity: 0.8;
     transition: 0.2s ease-in-out;
-    /* margin-right: auto; */
-    float: left;
+}
+
+
+/* The left property is what caused the logo to move to the left  */
+#logo-container {
+    position: relative;
+    /* margin-right: 4rem; */
+    /* text-align: left; */
+    left: -15rem;
 }
 
 .logo:hover {
@@ -125,9 +135,10 @@ section {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: #d89d7d;
+    background-color: var(--background);
     gap: 2em;
     color: #fff;
+    margin-top: 1rem;
 }
 
 
@@ -160,6 +171,7 @@ section {
 .info-box p{
     opacity: 0.7;
     line-height: 2.3em;
+    font-size: 1.4rem;
 }
 
 .btn-box {
@@ -169,9 +181,12 @@ section {
 .btn a {
     color: #f4e2d8;
 }
-.btn a:hover {
-    color: var(--background);
+.test  .touched {
+    background-color: red;
 }
+/* .btn a:hover {
+    color: var(--background);
+} */
 
 /* you can use the line below to style the second button */
 
@@ -186,7 +201,6 @@ section {
 } */
 
 /* SCROLLBAR STYLING */
-
 ::-webkit-scrollbar {
     width: 10px;
     background-color: var(--background);
@@ -214,6 +228,10 @@ section {
     width: 100%;
 }
 
+.about-info {
+    margin-bottom: 7rem;
+}
+
 
 .about-box h1 {
     font-size: 3.1em;
@@ -224,15 +242,66 @@ section {
     color: #fff;
     opacity: 0.8;
     line-height: 2.3em;
+    font-size: 1.4rem;
+}
+#projects-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    /* margin-top: 3rem; */
+    padding: 2rem 3.5rem;
+    /* outline: solid 2px red; */
+}
+
+#projects-header {
+    margin-top: 2rem;
+}
+
+.project-box {
+    background-color: rgb(215, 105, 190);
+    padding: 4rem 6.5rem;
 }
 
 .skills {
     display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: left;
-    gap: 12em;
+    gap: 6em;
+}
+.list-header {
+    font-size: 2.2rem;
 }
 
 .skills ul {
+    border: 2px solid rgb(49, 49, 49);
+    border-radius: 0.5em;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+    object-fit: cover;
+    padding: 3rem 5rem;
+    gap: 2rem;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    background-color: var(--second-background);
+}
+.skill-li {
+    font-size: 1.5rem;
+}
+
+.skills ul:hover {
+    border: 3px solid rgb(126, 123, 123);
+}
+
+/* .skills ul {
     font-size: 2em;
     font-weight: 300;
     display: flex;
@@ -241,7 +310,10 @@ section {
     opacity: 0.8;
     align-items: baseline;
     margin-top: 40px;
-}
+    gap: 2rem;
+    padding: 1rem 1rem;
+    outline: solid 2px red;
+} */
  /* add the styling for the skills icons dropdown */
 
 .about-box h2 {
@@ -300,6 +372,7 @@ section {
 .form-header{
     margin-bottom: 2rem;
     font-size: 3rem;
+    text-align: center;
 }
 
 form {
@@ -327,14 +400,15 @@ form input {
     border-radius: 0.5rem;
     border: none;
     outline: none;
+    text-align: left;
 }
 
 form input:focus{
     background: rgb(197, 191, 191);
 }
 
-.form-textarea {
-    font-size: 1.5rem;
+#form-textarea {
+    font-size: 1.7rem;
     padding: 2rem 5rem;
     border-radius: 0.5rem;
     border: none;
@@ -355,7 +429,7 @@ footer {
 .col-left {
     display: flex;
     flex-direction: column;
-    gap: 2em;
+    gap: 1em;
     margin-left: 0.8rem;
 }
 
@@ -363,7 +437,10 @@ footer {
     display: flex;
     align-items: center;
     gap: 1em;
+}
 
+#email-span {
+    padding: 1rem 0;
 }
 
 .col-right {
@@ -375,14 +452,44 @@ footer {
     margin-right: 0.8rem;
 }
 
+#social-media-icons {
+    padding: 0.8rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+#social-media-icons i{
+    color: #fff;
+    font-size: 2rem;
+}
+
+
+
 /* fix the @media to make it responsive*/
 @media(max-width:960px) {
+    nav {
+        gap: 0.9rem;
+    }
+    .links {
+        gap: 1.8rem;
+        font-size: 0.5rem;
+        /* margin-right: 5rem; */
+    }
+    #links-container {
+        padding: 0.2rem 0.3rem; 
+        margin-left: 1rem;
+        /* margin-right: 5em; */
+    }
+    #logo-container {
+        left: -5rem;
+    }
     section {
         padding: 8em 15%;
     }
     nav .btn {
         display: none;
-    }
+}
 }
 
 /* TODO: work on the FOOTER!!!!!!! */
@@ -390,7 +497,7 @@ footer {
 /* work on the dropdown menu for small screens */
 @media(max-width:600px) {
     *{
-        outline: solid 1px red !important;
+        /* outline: solid 1px red !important; */
     }
     body {
         /* width: 100vw; */
@@ -402,15 +509,22 @@ footer {
     }
     .links{
         display: none;
+        left: 0;
+        margin: 2rem;
+        margin-top: 3rem;
+        /* margin: auto; */
+    }
+    #links-container{
+        /* display: none; */
     }
     nav {
-        height: 30px;
+        height: 40px;
         width: 100%;
         padding: 3% 8%;
     }
     .show {
-        margin-top: 175px;
-        top: -110px;
+        margin-top: 150px;
+        top: -90px;
         height: 280px;
         display: flex;
         flex-direction: column;
@@ -442,6 +556,13 @@ footer {
         top: 0;
         z-index: 1;
         margin-right: 10px;
+        color: #fff;
+    }
+    #logo-container {
+        position: relative;
+        /* margin-right: 4rem; */
+        /* text-align: left; */
+        left: -1rem;
     }
     section {
         min-height: 100vh;
@@ -462,18 +583,22 @@ footer {
         font-size: 1rem;
     }
     #about {
-        background-color: #5f19f5;
+        /* background-color: #5f19f5; */
         /* width: 100vw; */
     }
     .info-box h1, h3{
         font-size: 1.8em;
     }
+    .info-box p{
+        font-size: 1.1rem;
+    }
     .about-info {
-        margin-top: 2px;
-        margin-bottom: 50px;
+        margin-top: 2rem;
+        margin-bottom: 4rem;
+        text-align: center;
     }
     .about-box {
-        gap: 0.5em;
+        gap: 1rem;
     }
     .about-box h1 {
         font-size: 1.7rem;
@@ -483,20 +608,65 @@ footer {
         line-height: 1.8rem;
         font-size: 1.1rem;
         width: 300px;
+        margin-left: 20px;
     }
     .about-box h2 {
         font-size: 1.7rem;
         margin-top: 15px;
+        text-align: center;
     } 
+
+    #projects-container {
+        gap: 1rem;
+    }
+
+    #projects-header {
+        text-align: center;
+    }
+    .project {
+        background-color: rgb(230, 133, 220);
+        padding: 2rem 3rem;
+    }
+
     .skills {
-        gap: 3rem;
+        gap: 2.5rem;
+        margin-bottom: 3rem;
+        /* margin-left: 2rem; */
+        display: flex;
+        /* flex-direction: row; */
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
     }
     .skills ul {
-        font-size: 1.2rem;
+        font-size: 1.3rem;
         margin-top: 25px;
+        gap: 1.8rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .list-header{
+        font-size: 1.5rem;
+    }
+    .skill-li {
+        /* display: none; */
+        font-size: 0.9rem;
+    }
+    #db-header {
+        text-align: center;
+        /* margin-left: 6rem; */
+    }
+    #frontend-header {
+        /* margin-left: 1.5rem; */
+    }
+    #backend-header {
+        /* margin-left: 1rem; */
     }
     .services-header {
         font-size: 1.7rem;
+        margin-top: 2rem;
+        text-align: center;
         /* margin-bottom: 5rem; */
     }
     .services-container {
@@ -507,6 +677,10 @@ footer {
         gap: 1.4em;
 
     }
+    .form-header {
+        font-size: 2rem;
+        margin-top: 2rem;
+    }
     form {
         gap: 1.5em;
     }
@@ -515,16 +689,37 @@ footer {
     }
     form input {
         font-size: 1em;
-        padding: 0.5em 3em;
-        border-radius: 0.5em;
+        padding: 0.5rem 3rem;
+        border-radius: 0.5rem;
         border: none;
         outline: none;
     }
     .input-box span {
-        font-size: 1em;
+        font-size: 1.5rem;
     }
     form .btn {
         padding: 0.3rem 0.5rem;
         font-size: 1.1rem;
+    }
+    #form-textarea {
+        padding: 1.3rem 2rem;
+        font-size: 0.9rem;
+    
+    }
+    footer {
+        
+    }
+    .col-box span {
+        text-align: center;
+    }
+    .col-right {
+        margin-right: 2rem;
+    }
+    .col-left {
+        /* margin-left: 2rem; */
+        margin-top: 0.5rem;
+        /* display: flex;
+        flex-direction: row;
+        flex-wrap: wrap; */
     }
 }
