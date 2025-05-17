@@ -375,6 +375,23 @@ section {
     text-align: center;
 }
 
+#contact-section-icons {
+    /* background-color: #ba5370; */
+    padding: 5rem;
+    display: flex;
+    gap: 3rem;
+    justify-content: center;
+    align-items: center;
+}
+.contact-media-link {
+    font-size: 4rem;
+}
+/* .form-header{
+    margin-bottom: 2rem;
+    font-size: 3rem;
+    text-align: center;
+}
+
 form {
     display: flex;
     flex-direction: column;
@@ -413,7 +430,7 @@ form input:focus{
     border-radius: 0.5rem;
     border: none;
     outline: none;
-}
+} */
 
 footer {
     display: flex;
@@ -681,7 +698,10 @@ footer {
         font-size: 2rem;
         margin-top: 2rem;
     }
-    form {
+    .contact-media-link {
+    font-size: 2rem;
+}
+    /* form {
         gap: 1.5em;
     }
     form .input-box{
@@ -705,7 +725,7 @@ footer {
         padding: 1.3rem 2rem;
         font-size: 0.9rem;
     
-    }
+    } */
     footer {
         
     }
