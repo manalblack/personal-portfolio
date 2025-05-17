@@ -1,7 +1,6 @@
 
-// get the menu icon 
 
-// const menu = document.getElementById('menu');
+const menu = document.getElementById('menu');
 const navLinks = document.querySelector('.links');
 const navBar = document.querySelector('.nav-bar');
 const buttons = document.querySelectorAll('.btn');
@@ -13,16 +12,5 @@ menu.addEventListener('click', () => {
     // navBar.classList.toggle('show-nav')
 })
 
-testBtn.addEventListener('touchstart', () => {
-    testBtn.classList.add('touched');
-})
 
-testBtn.addEventListener('touchend', () => {
-    testBtn.classList.remove('touched');
-})
 
-// buttons.forEach(button => {
-//     button.addEventListener('touchstart', () =>{
-//         button.classList.add('test-touch')
-//     })
-// })

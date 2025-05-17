@@ -76,7 +76,7 @@
                 </p>
             </div>
 
-                <h1 id="projects-header"><span>Projects</span></h1>
+                <h1 id="projects-header"><span>Projects </span></h1>
                 <div id="projects-container">
                     
                     <div class="project-box">
@@ -92,7 +92,6 @@
                         project container
                     </div>
                     <div class="project-box">
-                        project container
                     </div>
                     <div class="project-box">
                         project container
@@ -157,23 +156,23 @@
     <section id="contact">
         <h1 class="form-header"><span>Contact</span></h1>
 
-        <form action="">
+        <form id="form">
             <div class="input-box">
                 <span>full name</span>
-                <input type="text" placeholder="">
+                <input type="text" placeholder="" id="name" name="name">
             </div>
             <div class="input-box">
                 <div class="input-box">
                     <span>email</span>
-                    <input type="text" placeholder="">
+                    <input type="text" placeholder="" id="email" name="email"> 
                 </div>
             </div>
             <div class="input-box">
-                <span>meassage</span>
+                <span>message</span>
                 <!--  TODO: change the input to a textarea!! -->
-                  <textarea id="form-textarea"></textarea>
+                  <textarea id="form-textarea" name="message"></textarea>
             </div>
-            <div class="btn">submit</div>
+            <button class="btn" type="button" onclick="sendEmail()">submit</button>
         </form>
     </section>
    </main>
@@ -195,16 +194,21 @@
 
                     <!-- add your social media accounts link in the href -->
                     <div id="social-media-icons">
-                        <a href="" id="social-media-link">
-                            <i class="fa-brands fa-instagram"></i>
+                        <a href="https://www.instagram.com/manalcoder/" id="social-media-link">
+                            <i class="fa-brands fa-instagram">
+                                
+                            </i>
                         </a>
-                        <a href="" id="social-media-link">
+                        <a href="https://x.com/CoderManal2024" id="social-media-link">
                             <i class="fa-brands fa-x-twitter" ></i>
                         </a>
-                        <a href="" id="social-media-link">
+                        <a href="https://www.linkedin.com/in/manal-coder-ba8501365/" id="social-media-link">
                             <i class="fa-brands fa-linkedin"></i>
                         </a>
 
+                        <a href="https://web.facebook.com/profile.php?id=61566418472647">
+                            <i class="fa-brands fa-square-facebook" style="color: #ffffff;"></i>
+                        </a>
                        
                        
                     </div>
