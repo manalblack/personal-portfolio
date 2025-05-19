@@ -262,7 +262,16 @@ section {
 
 .project-box {
     background-color: rgb(215, 105, 190);
-    padding: 4rem 6.5rem;
+    padding: 1rem 2rem;
+}
+#e-commerce-screenshots {
+    width: 75vw;
+    border: 0.5rem;
+    transition: transform 0.5s ease-in-out;
+    border-radius: 0.2rem;
+}
+#e-commerce-screenshots:hover {
+    transform: scale(1.05);
 }
 
 .skills {
@@ -386,6 +395,7 @@ section {
 .contact-media-link {
     font-size: 4rem;
 }
+
 /* .form-header{
     margin-bottom: 2rem;
     font-size: 3rem;
