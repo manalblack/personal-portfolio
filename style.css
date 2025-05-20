@@ -261,17 +261,22 @@ section {
 }
 
 .project-box {
-    background-color: rgb(215, 105, 190);
+    /* background-color: rgb(91, 62, 84); */
     padding: 1rem 2rem;
 }
 #e-commerce-screenshots {
-    width: 75vw;
+    width: 65vw;
     border: 0.5rem;
     transition: transform 0.5s ease-in-out;
     border-radius: 0.2rem;
 }
-#e-commerce-screenshots:hover {
+/* #e-commerce-screenshots:hover {
     transform: scale(1.05);
+} */
+.project-link {
+    font-size: 2rem;
+    color: #fff;
+    border-bottom: solid 2px #fff;
 }
 
 .skills {
