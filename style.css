@@ -528,9 +528,9 @@ footer {
 /* hide the button and only show it when the screen hit the 700px breakpoint  */
 /* work on the dropdown menu for small screens */
 @media(max-width:600px) {
-    * { 
+    /* * { 
         outline: solid 1px red !important;
-    }
+    } */
     body {
         /* width: 100vw; */
         height: 100vh;
