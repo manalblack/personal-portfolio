@@ -264,7 +264,7 @@ section {
     /* background-color: rgb(91, 62, 84); */
     padding: 1rem 2rem;
 }
-#e-commerce-screenshots {
+.project-screenshots {
     width: 65vw;
     border: 0.5rem;
     transition: transform 0.5s ease-in-out;
@@ -528,8 +528,8 @@ footer {
 /* hide the button and only show it when the screen hit the 700px breakpoint  */
 /* work on the dropdown menu for small screens */
 @media(max-width:600px) {
-    *{
-        /* outline: solid 1px red !important; */
+    * { 
+        outline: solid 1px red !important;
     }
     body {
         /* width: 100vw; */
@@ -625,7 +625,7 @@ footer {
         font-size: 1.1rem;
     }
     .about-info {
-        margin-top: 2rem;
+        /* margin-top: 2rem; */
         margin-bottom: 4rem;
         text-align: center;
     }
@@ -658,6 +658,21 @@ footer {
     .project {
         background-color: rgb(230, 133, 220);
         padding: 2rem 3rem;
+    }
+    .project-box {
+        padding: 1rem 2rem; 
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+    }
+    .project-screenshots {
+        width: 65vw;
+        border: 0.5rem;
+        transition: transform 0.5s ease-in-out;
+        border-radius: 0.2rem;
+        /* align-self: center; */
     }
 
     .skills {
